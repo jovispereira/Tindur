@@ -4,25 +4,142 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E0D3FF"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="69dp"
+        android:background="#FFE3E3"
+        android:fontFamily="@font/alata"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Temperatura do local:"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="41dp"
+        android:background="#FFE3E3"
+        android:fontFamily="@font/alata"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Uma descrição sobre o tempo:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.344" />
+        app:layout_constraintVertical_bias="0.558" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="makeRequest"
-        android:text="Button"
-        tools:layout_editor_absoluteX="178dp"
-        tools:layout_editor_absoluteY="358dp" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="41dp"
+        android:background="#FFE3E3"
+        android:fontFamily="@font/alata"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Período do dia"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.827" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="23dp"
+        android:background="#AEABAB"
+        android:backgroundTint="#FFE3E3"
+        android:fontFamily="@font/alata"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="O local onde você está é:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.276" />
+
+    <TextView
+        android:id="@+id/climateTemperature"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="45dp"
+        android:background="#C5F4B2"
+        android:fontFamily="@font/alata"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Loading..."
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <TextView
+        android:id="@+id/descriptionTime"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="80dp"
+        android:background="#C5F4B2"
+        android:fontFamily="@font/alata"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Loading..."
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.668" />
+
+    <TextView
+        android:id="@+id/dayPeriod"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="80dp"
+        android:background="#C5F4B2"
+        android:fontFamily="@font/alata"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Loading..."
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.972" />
+
+    <TextView
+        android:id="@+id/cityLocal"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="25dp"
+        android:background="#C5F4B2"
+        android:fontFamily="@font/alata"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Loading..."
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
